@@ -4,8 +4,10 @@
 </h2>
 <ol>
     <li>Make sure you have the latest stable versions for Node.js , YARN & NPM installed</li>
-    <li>MAMP v6.6 (Mac OSX)/ MAMP v5.0.5 (Windows)</li>
+    <li> MAMP(https://www.mamp.info/en/downloads/) v6.6 (Mac OSX)/ MAMP v5.0.5 (Windows)</li>
     <li>PHP v8.x.x</li>
+    <li>Composer v2.4.2</li>
+    <li>mysql v5.7.34 (include MAMP)</li>
 </ol>
 
 ---
@@ -40,32 +42,42 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### Backend
 
-First, install dependency:
+1. Clone repository: <code>git clone https://github.com/lookmann30/restaurent_laravel.git</code>
+
+2. Create project laravel
+
+3. Copy all file in database/migrations from repo to database/migrations
+
+4. Create database name 'laravel_restaurent' in mysql
+
+5. change database detail in .env
+
 
 ```bash
-npm install
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=8889
+DB_DATABASE=laravel_restaurent
+DB_USERNAME=root
+DB_PASSWORD=root
 ```
 
-Second, run server:
+6. type <code>php artisan migrate</code> in terminal
 
-```bash
-node server.js
-```
-or use [nodemon](https://github.com/remy/nodemon)
-```bash
-nodemon server.js
-```
+7. type <code>composer require php-open-source-saver/jwt-auth</code> in terminal
 
-Server is running on port 3001
+8. type <code>php artisan vendor:publish --provider="PHPOpenSourceSaver\JWTAuth\Providers\LaravelServiceProvider"</code> in terminal
 
-### Database
-> Don't forget install [Postgresql](https://www.postgresql.org/download/)
+9. type <code>php artisan jwt:secret</code> in terminal
 
-<ol>
-    <li>Start pgAdmin 4 client</li>
-    <li>Open menu tools and choose Import/Export Servers</li>
-    <li>Import/Export : select file db.json and click next</li>
-    <li>Database Servers : select Servers include PostgresSQL14 click next</li>
-    <li>Summary : click finnish</li>
-    <li>Connect to server with password "P@ssw0rd"</li>
-</ol>
+10. Copy config/auth.php from repo to config/auth.php
+
+11. Copy all file in app/Models from repo to app/models replace all
+
+12. Copy all file in app/http/controllers from repo to app/http/controllers replace all
+
+13. Copy file routes/api.php from from repo to replace routes/api.php
+
+14. import menu.sql and users.sql to database
+
+15. Type <code>php artisan serve</code> to run server
