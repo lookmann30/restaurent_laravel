@@ -44,7 +44,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 1. Clone repository: <code>git clone https://github.com/lookmann30/restaurent_laravel.git</code>
 
-2. Create project laravel in MAMP path htdocs <code>composer global require laravel/installer</code>
+2. Create project laravel in MAMP path htdocs <code>composer create-project laravel/laravel restaurent_backend <project name></code>
 
 3. Copy all file in database/migrations from repo to database/migrations
 
