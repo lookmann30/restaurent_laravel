@@ -56,7 +56,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
-DB_PORT=8889
+DB_PORT=8889(MacOS)/3306(windows)
 DB_DATABASE=laravel_restaurent
 DB_USERNAME=root
 DB_PASSWORD=root
