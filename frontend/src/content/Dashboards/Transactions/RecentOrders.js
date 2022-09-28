@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Card } from '@mui/material';
+import { Card, Container } from '@mui/material';
 import RecentOrdersTable from './RecentOrdersTable';
 
 import { useRouter } from 'next/router'
@@ -59,9 +59,11 @@ function RecentOrders() {
   }
 
   return (
+    <Container>
     <Card>
         <RecentOrdersTable orders={orders} deleteOrder={deleteOrder}/>
     </Card>
+    </Container>
   );
 }
 

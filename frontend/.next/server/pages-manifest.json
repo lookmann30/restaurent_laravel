@@ -1,0 +1,9 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/order/edit/[id]": "pages/order/edit/[id].js",
+  "/kitchen_transections": "pages/kitchen_transections.js",
+  "/order/create": "pages/order/create.js",
+  "/dashboards": "pages/dashboards.js"
+}
