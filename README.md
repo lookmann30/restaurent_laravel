@@ -1,11 +1,11 @@
 
 <h2>
-    Requirement
+    System usage
 </h2>
 <ol>
     <li>Make sure you have the latest stable versions for Node.js , YARN & NPM installed</li>
-    <li>Postgesql v14</li>
-    
+    <li>MAMP v6.6 (Mac OSX)/ MAMP v5.0.5 (Windows)</li>
+    <li>PHP v8.x.x</li>
 </ol>
 
 ---
@@ -14,7 +14,7 @@
     Installation
 </h2>
 <p>
-    <li>Clone repository: <code>git clone https://github.com/lookmann30/restaurant.git</code></li>
+    <li>Clone repository: <code>git clone https://github.com/lookmann30/restaurent_laravel.git</code></li>
 </p>
 
 ### Frontend
