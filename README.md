@@ -78,6 +78,6 @@ DB_PASSWORD=root
 
 13. Copy file routes/api.php from from repo to replace routes/api.php
 
-14. import menu.sql and users.sql to database
+14. import menu.sql and users.sql to tables on database
 
 15. Type <code>php artisan serve</code> to run server
