@@ -5,7 +5,7 @@
 <ol>
     <li>Make sure you have the latest stable versions for Node.js , YARN & NPM installed</li>
     <li> MAMP(https://www.mamp.info/en/downloads/) v6.6 (Mac OSX)/ MAMP v5.0.5 (Windows)</li>
-    <li>PHP v8.x.x</li>
+    <li>PHP v8.1.8</li>
     <li>Composer v2.4.2</li>
     <li>mysql v5.7.34 (include MAMP)</li>
 </ol>
